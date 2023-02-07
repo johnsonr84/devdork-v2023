@@ -11,7 +11,9 @@ function Hero({ }: Props) {
             'Hey! I am Rob',
             'I enjoy building apps, software and platforms that help others',
             'This Full Stack website was built using...',
-            'React, TypeScript, NextJS, Tailwind and Sanity'
+            'React, TypeScript, NextJS, Tailwind on the Front End and...',
+            // 'Sanity CMS for the Back End to server side render for...',
+            // 'lightening fast performance and SEO optimization!',
         ],
         loop: true,
         delaySpeed: 2000,
@@ -19,11 +21,11 @@ function Hero({ }: Props) {
     return (
         <div className='h-screen flex flex-col space-y-8 items-center justify-center text-center overflow-hidden'>
             <BackgroundCircles />
-            <img
+            {/* <img
                 className='relative rounded-full h-32 w-32 mx-auto object-cover'
                 src="https://via.placeholder.com/50 "
                 alt="placeholder"
-            />
+            /> */}
             <div className='text-3xl lg:text-4xl font-semibold px-10 z-20'>
                 <h2 className='text-sm uppercase text-gray-500 pb-2 tracking-[15px]'>Full Stack Software Developer</h2>
                 <h1>
@@ -48,5 +50,4 @@ function Hero({ }: Props) {
         </div>
     )
 }
-
-export default Hero
+export default Hero;

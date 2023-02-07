@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 
 type Props = {};
 
-export default function ExperienceCard({ }: Props) {
+function ExperienceCard({ }: Props) {
     return (
         <article className='flex flex-col rounded-lg items-center space-y-7 
         flex-shrink-0 w-[500px] md:w-[600px] xl:w-[900px] snap-center bg-[#292929] 
@@ -22,7 +22,7 @@ export default function ExperienceCard({ }: Props) {
                 <p className='font-bold text-2xl mt-1'>Perfectly Posh</p>
                 <div className='flex space-x-2 my-2'>
                     {/* thech used */}
-                    <img className='h-10 w-10 rounded-full'
+                    {/* <img className='h-10 w-10 rounded-full'
                         src="https://via.placeholder.com/50"
                         alt=""
                     />
@@ -33,7 +33,7 @@ export default function ExperienceCard({ }: Props) {
                     <img className='h-10 w-10 rounded-full'
                         src="https://via.placeholder.com/50"
                         alt=""
-                    />
+                    /> */}
                 </div>
                 <p className='uppercase py-5 text-gray-300'>Started... Ended...</p>
                 <ul className='list-disc space-y-4 ml-5 text-lg'>
@@ -47,3 +47,4 @@ export default function ExperienceCard({ }: Props) {
         </article>
     );
 }
+export default ExperienceCard;
