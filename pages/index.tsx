@@ -24,8 +24,9 @@ type Props = {
 };
 
 const Home = ({ projects, skills, pageInfo, experiences, socials }: Props) => {
+
   return (
-    <div className='bg-[rgb(36,36,36)] text-white h-screen snap-y snap-mandatory overflow-y-scroll overflow-x-hidden z-0 scrollbar scrollbar-track-gray-400/20 scrollbar-thumb-[#61DAFB]/80'>
+    <div className='bg-white text-gray-500 h-screen snap-y snap-mandatory overflow-y-scroll overflow-x-hidden z-0 scrollbar-thin scrollbar-track-gray-400/20 scrollbar-thumb-[#61DAFB]/80'>
 
       <Header socials={socials} />
 
@@ -38,25 +39,25 @@ const Home = ({ projects, skills, pageInfo, experiences, socials }: Props) => {
       </section>
 
       <section id="experience" className='snap-center'>
-        <WorkExperience />
+        <WorkExperience experiences={experiences} />
       </section>
 
       <section id="skills" className='snap-start'>
-        <Skills />
+        <Skills skills={skills} />
       </section>
 
       <section id="projects" className='snap-center'>
-        <Projects />
+        <Projects projects={projects} />
       </section>
 
       <section id="contact" className='snap-center'>
         <Contact />
       </section>
       <Link href='#hero'>
-        <footer className='sticky bottom-5 w-full cursor-pointer pt-10'>
+        <footer className='sticky bottom-5 w-full cursor-pointer pt-5'>
           <div className='flex items-center justify-center'>
             <ArrowUpCircleIcon
-              className='h-10 w-10 rounded-full filter grayscale hover:bg-[#61DAFB] cursor-pointer'
+              className='h-10 w-10 rounded-full filter text-gray-400 hover:bg-[#61DAFB] cursor-pointer'
             />
           </div>
         </footer>

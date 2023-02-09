@@ -7,5 +7,11 @@ module.exports = {
   theme: {
     extend: {},
   },
+  darkMode: 'class', // or 'media' or 'class'
+  variants: {
+    extend: {
+      textOpacity: ['dark']
+    }
+  },
   plugins: [require("tailwind-scrollbar")],
 };

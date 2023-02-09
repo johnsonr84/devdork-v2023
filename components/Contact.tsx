@@ -27,7 +27,7 @@ type Inputs = {
             <h3 className='absolute top-24 uppercase tracking-[20px] text-gray-500 text-2xl'>
                 Contact
             </h3>
-            <div className='flex flex-col space-y-10 pt-10'>
+            <div className='flex flex-col space-y-10 pt-5'>
                 <h4 className='text-4xl font-semibold text-center'>
                     I want to hear from you! {" "}
                     <span className='decoration-[#61DAFB]/50 underline'>

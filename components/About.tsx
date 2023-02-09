@@ -31,7 +31,7 @@ function About({ pageInfo }: Props) {
             ></motion.img>
 
             <div className="space-y-10 px-0 md:px-10">
-                <h4 className="pt-10 text-2xl md:text-3xl lg:text-4xl font-semibold">
+                <h4 className="pt-5 text-2xl md:text-3xl lg:text-4xl font-semibold">
                     Thanks for being{" "}
                     <span className="decoration-[#61DAFB]/50 underline">curious</span>{" "}
                     about my life!
