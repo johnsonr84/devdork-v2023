@@ -29,7 +29,7 @@ type Inputs = {
             </h3>
             <div className='flex flex-col space-y-10 pt-5'>
                 <h4 className='text-4xl font-semibold text-center'>
-                    I want to hear from you! {" "}
+                    I want to hear from you. {" "}
                     <span className='decoration-[#61DAFB]/50 underline'>
                         Lets talk!
                     </span>
