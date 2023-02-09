@@ -5,7 +5,7 @@ import { urlFor } from "../sanity";
 import Link from "next/link";
 
 type Props = {
-    projects: Project[];
+  projects: Project[];
 };
 
 function Projects({ projects }: Props) {

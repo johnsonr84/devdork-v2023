@@ -1,13 +1,13 @@
-import React from 'react';
-import { motion } from 'framer-motion';
+import React from "react";
+import { motion } from "framer-motion";
 import { Experience } from "../typings";
 import { urlFor } from "../sanity";
 
 type Props = {
-    experience: Experience;
-  };
+  experience: Experience;
+};
 
-  function ExperienceCard({ experience }: Props) {
+function ExperienceCard({ experience }: Props) {
     return (
         <article className="flex flex-col rounded-lg items-center space-y-7 flex-shrink-0 w-[500px] md:w-[600px] xl:w-[900px] snap-center text-white bg-gray-700/70 p-10 hover:opacity-100 opacity-40 cursor-pointer transition-opacity duration-200 overflow-hidden">
           <motion.img
@@ -29,7 +29,7 @@ type Props = {
           {experience.technologies.map((technology) => (
             <img
               key={technology._id}
-              className="h-10 w-auto rounded-sm m-1"
+              className="h-10 w-auto rounded-full m-1"
               src={urlFor(technology.image)?.url()}
             />
           ))}

@@ -1,6 +1,6 @@
 import { GetStaticProps } from "next";
 import About from "../components/About";
-import Contact from "../components/Contact";
+import ContactMe from "../components/ContactMe";
 import Header from "../components/Header";
 import Hero from "../components/Hero";
 import Projects from "../components/Projects";
@@ -24,13 +24,12 @@ type Props = {
 };
 
 const Home = ({ projects, skills, pageInfo, experiences, socials }: Props) => {
-
   return (
     <div className='bg-white text-gray-500 h-screen snap-y snap-mandatory overflow-y-scroll overflow-x-hidden z-0 scrollbar-thin scrollbar-track-gray-400/20 scrollbar-thumb-[#61DAFB]/80'>
 
       <Header socials={socials} />
 
-      <section id="hero" className='snap-start'>
+      <section id="hero" className='snap-center'>
         <Hero pageInfo={pageInfo} />
       </section>
 
@@ -46,13 +45,14 @@ const Home = ({ projects, skills, pageInfo, experiences, socials }: Props) => {
         <Skills skills={skills} />
       </section>
 
-      <section id="projects" className='snap-center'>
+      <section id="projects" className='snap-start'>
         <Projects projects={projects} />
       </section>
 
-      <section id="contact" className='snap-center'>
-        <Contact />
+      <section id="contact" className='snap-start'>
+        <ContactMe pageInfo={pageInfo} />
       </section>
+
       <Link href='#hero'>
         <footer className='sticky bottom-5 w-full cursor-pointer pt-5'>
           <div className='flex items-center justify-center'>
@@ -65,6 +65,7 @@ const Home = ({ projects, skills, pageInfo, experiences, socials }: Props) => {
     </div>
   )
 }
+
 export default Home;
 
 export const getStaticProps: GetStaticProps<Props> = async () => {

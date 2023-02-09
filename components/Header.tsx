@@ -5,7 +5,7 @@ import Link from "next/link";
 import { Social } from "../typings";
 
 type Props = {
-    socials: Social[];
+  socials: Social[];
 };
 
 const Header = ({ socials }: Props) => {
