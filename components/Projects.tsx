@@ -37,7 +37,7 @@ function Projects({ projects }: Props) {
                                     whileInView={{ opacity: 1, y: 0 }}
                                     viewport={{ once: true }}
                                     src={urlFor(project?.image).url()}
-                                    className="md:mb-0 flex-shrink-0 w-56 h-56 rounded md:rounded-lg md:w-64 md:h-96 xl:w-[500px] xl:h-[300px] object-contain cursor-pointer"
+                                    className="md:mb-0 p-5 flex-shrink-0 w-70 h-70 rounded md:rounded-lg md:w-[400px] md:h-[400px] lg:w-[500px] lg:h-[500px] xl:w-[500px] xl:h-[500px] object-contain cursor-pointer"
                                 />
                             </a>
                         </Link>

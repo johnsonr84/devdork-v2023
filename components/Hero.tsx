@@ -12,8 +12,8 @@ type Props = {
 function Hero({ pageInfo }: Props) {
     const [text, count] = useTypewriter({
         words: [
-            `Hey! I am ${pageInfo?.name}`,
-            'I enjoy building apps and software that help others',
+            `Hey! I am ${pageInfo?.name}. Thanks for stopping by`,
+            'I enjoy building apps and software that helps others',
             'This Full Stack website was built with...',
             'React, TypeScript, NextJS, Tailwind on the Front End and...',
             'Sanity CMS for the Back End to server side render for...',
@@ -25,10 +25,10 @@ function Hero({ pageInfo }: Props) {
         deleteSpeed: 30,
     })
     return (
-        <div className='h-screen flex flex-col space-y-8 items-center justify-center text-center overflow-hidden'>
+        <div className='h-screen flex flex-col space-y-10 items-center justify-center text-center overflow-hidden'>
             <BackgroundCircles />
             <img
-                className="relative rounded-full h-32 w-32 md:h-36 md:w-36 xl:h-80 xl:w-80 mx-auto object-cover"
+                className="relative rounded-full h-[400px] w-[400px] md:h-[4500px] md:w-[500px] xl:h-[600px] xl:w-[600px] mx-auto object-cover"
                 src={urlFor(pageInfo?.heroImage).url()}
                 alt=""
             />
@@ -36,12 +36,12 @@ function Hero({ pageInfo }: Props) {
         <h2 className="tracking-[15px] text-sm uppercase text-gray-500 pb-2">
           {pageInfo?.role}
         </h2>
-        <h1 className="text-3xl lg:text-4xl font-semibold px-10 py-5">
+        <h1 className="text-3xl lg:text-4xl font-semibold px-10 p-2">
           <span className="mr-3">{text}</span>
           <Cursor cursorColor="#61DAFB" />
         </h1>
 
-        <div className="pt-2">
+        <div className="pb-10">
           <Link href="#about">
             <button className="heroButton">About</button>
           </Link>

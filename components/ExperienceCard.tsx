@@ -19,7 +19,7 @@ type Props = {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             src={urlFor(experience.companyImage).url()}
-            className="w-32 h-32 rounded-full md:rounded-full xl:w-[150px] xl:h-[150px] object-cover object-center"
+            className="w-32 h-32 rounded-full md:rounded-full  xl:w-[150px] xl:h-[150px] object-cover object-center"
           />
     
     <div className="px-0 md:px-10">
